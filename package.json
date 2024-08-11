@@ -11,7 +11,8 @@
     "format": "prettier --check \"**/*.{ts,tsx,js,jsx,cjs,mjs,md,json,lintstagedrc}\"",
     "format:fix": "prettier --write \"**/*.{ts,tsx,js,jsx,cjs,mjs,md,json,lintstagedrc}\"",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "prepare": "husky"
   },
   "dependencies": {
     "@expo/metro-runtime": "~3.2.1",
@@ -33,6 +34,8 @@
     "eslint-config-expo": "^7.1.2",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-react-hooks": "^4.6.2",
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.8",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.6",
     "typescript": "5.3.3"

@@ -4,7 +4,6 @@ const config = {
   parserOptions: {
     project: true
   },
-  plugins: ["@typescript-eslint"],
   extends: [
     // @see https://github.com/expo/expo/blob/main/packages/eslint-config-expo/.eslintrc.js
     "expo",
@@ -15,6 +14,7 @@ const config = {
     // @see https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/src/configs/stylistic-type-checked.ts
     "plugin:@typescript-eslint/stylistic-type-checked",
   ],
+  plugins: ["@typescript-eslint"],
   rules: {
     // @see https://typescript-eslint.io/rules/array-type
     "@typescript-eslint/array-type": "off",

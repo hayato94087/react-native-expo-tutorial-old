@@ -8,6 +8,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "typecheck": "tsc --noEmit",
+    "format": "prettier --check \"**/*.{ts,tsx,js,jsx,cjs,mjs,md,json,lintstagedrc}\"",
+    "format:fix": "prettier --write \"**/*.{ts,tsx,js,jsx,cjs,mjs,md,json,lintstagedrc}\"",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },
@@ -22,6 +24,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
     "@types/eslint": "^8.56.0",
     "@types/react": "~18.2.45",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
@@ -30,6 +33,8 @@
     "eslint-config-expo": "^7.1.2",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-react-hooks": "^4.6.2",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.6",
     "typescript": "5.3.3"
   },
   "private": true
